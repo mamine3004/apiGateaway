@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7268
+        }
+      ],
+      "UpstreamPathTemplate": "/gateaway/Users",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+
+}
